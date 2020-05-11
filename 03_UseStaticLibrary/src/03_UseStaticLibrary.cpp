@@ -5,8 +5,8 @@ using namespace std;
 
 int main(int parameterCount, char** parameter)
 {
-	cout << "17 + 4 = " << Add(17, 4) << endl;
-	getchar();
+        cout << "17 + 4 = " << Add(17, 4) << endl;
+        getchar();
 }
 
 
@@ -16,3 +16,4 @@ int main(int parameterCount, char** parameter)
 //3. Onglet Reference
 //4. "Cocher StaticLibrairy"
 //5. Apply and Close
+
