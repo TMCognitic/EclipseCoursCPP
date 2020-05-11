@@ -7,6 +7,8 @@ int main(int parameterCount, char** parameter)
 {
         cout << "17 + 4 = " << Add(17, 4) << endl;
         getchar();
+
+    	return 0;
 }
 
 
@@ -16,4 +18,3 @@ int main(int parameterCount, char** parameter)
 //3. Onglet Reference
 //4. "Cocher StaticLibrairy"
 //5. Apply and Close
-
