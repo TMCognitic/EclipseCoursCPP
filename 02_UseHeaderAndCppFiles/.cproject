@@ -33,7 +33,7 @@
                             							
                             <targetPlatform id="cdt.managedbuild.target.gnu.platform.exe.debug.1184815933" name="Debug Platform" superClass="cdt.managedbuild.target.gnu.platform.exe.debug"/>
                             							
-                            <builder autoBuildTarget="all" buildPath="${workspace_loc:/UseHeaderAndCppFiles}/Debug" cleanBuildTarget="clean" id="org.eclipse.cdt.build.core.internal.builder.394235467" incrementalBuildTarget="all" managedBuildOn="true" name="CDT Internal Builder" superClass="org.eclipse.cdt.build.core.internal.builder"/>
+                            <builder autoBuildTarget="all" buildPath="${workspace_loc:/UseHeaderAndCppFiles}/Debug" cleanBuildTarget="clean" id="org.eclipse.cdt.build.core.internal.builder.394235467" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="CDT Internal Builder" superClass="org.eclipse.cdt.build.core.internal.builder"/>
                             							
                             <tool id="cdt.managedbuild.tool.gnu.archiver.base.1084489280" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
                             							

@@ -15,4 +15,6 @@ int main(int parameterCount, char** parameter)
 {
 	cout << "9 + 4 = " << Add(9, 4) << endl;
 	getchar();
+
+	return 0;
 }
