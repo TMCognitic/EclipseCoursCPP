@@ -1,11 +1,3 @@
-//============================================================================
-// Name        : 14_Templates.cpp
-// Author      : 
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 #include "Templates.h"
 
 //Utilisation de l'existant
@@ -33,9 +25,6 @@ trio<int, int, int> GetTrio(int, int, int);
 template<typename T>
 vector<T> Where(const vector<T>&, function<bool(const T&)>);
 
-//Template Specialization
-//Important : Review Template Specialization
-
 //Variadic Template
 template<typename T>
 T sum(T t) {return t;}
@@ -54,12 +43,14 @@ auto sum(const T& t, const P&... p){
 }
 
 //Metaprogramming template
-template<int n> struct Factorielle
+template<int n>
+struct Factorielle
 {
 	enum { value = n * Factorielle<n-1>::value };
 };
 
-//Template specialization
+//Template Specialization
+//Défini un cas particulier du template Factorielle
 template<> struct Factorielle<0>
 {
 	enum { value = 1 };
