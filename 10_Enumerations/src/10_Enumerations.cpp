@@ -35,7 +35,12 @@ namespace Cards_NonScoped
         //static const int Pique = 2;
         //static const int Trefle = 3;
         Couleur couleur = Coeur; // Ce qui explique de l'enumeration est visible sans devoir spécifier le type conteneur
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-variable"
         int value = couleur; // et la conversion implicite en entier est possible
+#pragma GCC diagnostic pop
+
         cout << "Valeur de couleur : " << couleur << endl;
         couleur = (Couleur)3;
         if (couleur == Trefle)
@@ -74,7 +79,12 @@ namespace Cards_Scoped
     void Procedure()
     {
         Couleur couleur = Couleur::Coeur; // L'énumeration doit être utilisée avec le type de l'énumération
-        int value = (int)couleur; // et la conversion en entier est impossible
+
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-variable"
+        int value = (int)couleur; // et la conversion implicite en entier est impossible
+#pragma GCC diagnostic pop
+
         cout << "Valeur de couleur : " << (int)couleur << endl;
         couleur = (Couleur)2;
         if (couleur == Couleur::Pique)

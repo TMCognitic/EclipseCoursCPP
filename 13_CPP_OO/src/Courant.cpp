@@ -3,13 +3,13 @@
 Courant::Courant(string numero, Personne* titulaire)
 	: Compte(numero, titulaire)
 {
-
+	_ligneDeCredit = 0;
 }
 
 Courant::Courant(string numero, Personne* titulaire, const double solde)
 	: Compte(numero, titulaire, solde)
 {
-
+	_ligneDeCredit = 0;
 }
 
 Courant::Courant(string numero, const double ligneDeCredit, Personne* titulaire)

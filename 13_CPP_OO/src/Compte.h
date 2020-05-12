@@ -22,6 +22,7 @@ protected:
 	//Un moyen est de mettre les constructeurs au maximum en protected
 	Compte(string numero, Personne* titulaire);
 	Compte(string numero, Personne* titulaire, const double solde);
+	virtual ~Compte();
 
 	//Methodes
 	//Un autre moyen est de mettre un membre en virtuel pure (l'idéal est de faire les deux)

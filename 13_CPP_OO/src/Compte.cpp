@@ -23,6 +23,11 @@ Compte::Compte(string numero, Personne* titulaire, const double solde)
 	SetSolde(solde);
 }
 
+Compte::~Compte()
+{
+
+}
+
 string Compte::GetNumero()
 {
 	return _numero;
