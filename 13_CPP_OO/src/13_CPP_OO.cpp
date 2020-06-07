@@ -28,11 +28,29 @@ int main()
         cout << ex.what() << endl;
     }
 
-    banque["1235"s]->AppliquerInteret();
     banque["1234"s]->AppliquerInteret();
+    banque["1235"s]->AppliquerInteret();
 
     cout << "Solde du compte 1234 : " << banque["1234"s]->GetSolde() << endl;
     cout << "Avoir des comptes de " << p->GetNom() << " " << p->GetPrenom() << " : " << banque.AvoirDesComptes(p) << endl;
+
+    Courant *c3 = dynamic_cast<Courant*>(banque["1234"s]);
+
+    if(c3 != nullptr)
+    {
+    	cout << "Ligne de crédit du compte 1234 : " << c3->GetLigneDeCredit() << endl;
+    }
+
+    Courant *c4 = dynamic_cast<Courant*>(banque["1235"s]);
+
+	if(c4 != nullptr)
+	{
+		cout << "Ligne de crédit du compte 1235 : " << c4->GetLigneDeCredit() << endl;
+	}
+	else
+	{
+		cout << "Le compte 1235 n'est pas un compte courant " << endl;
+	}
 
     delete p;
     delete c1;

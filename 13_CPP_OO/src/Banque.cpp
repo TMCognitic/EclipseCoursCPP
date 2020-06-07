@@ -2,7 +2,7 @@
 
 const void Banque::OnNotification(const string& numero)
 {
-	cout << "Le compte " << numero << " vient de passe en négatif..." << endl;
+	cout << "Le compte " << numero << " vient de passe en negatif..." << endl;
 }
 
 Compte* Banque::operator[](const string& numero)
@@ -20,7 +20,7 @@ Banque::~Banque()
 	_comptes.clear();
 }
 
-//Remplacé par la surcharge de l'opérateur d'index
+//Remplacï¿½ par la surcharge de l'opï¿½rateur d'index
 //Courant* Banque::GetCompte(const string& numero)
 //{
 //	auto it = _comptes.find(numero);
