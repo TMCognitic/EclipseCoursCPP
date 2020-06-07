@@ -39,7 +39,7 @@ public:
 	virtual double GetSolde() final;
 	virtual Personne& GetTitulaire() final;	
 	
-	//Methodess
+	//Methodes
 	virtual void AppliquerInteret() final;
 	void Depot(double montant);
 	virtual void Retrait(double montant);
